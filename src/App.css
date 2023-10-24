@@ -1,0 +1,24 @@
+body {
+    background-image: url('https://media.architecturaldigest.com/photos/60ca52bf629cdf5f72514a19/master/w_1600%2Cc_limit/1_Strawberry%2520ThiefDARW212564.jpg');
+    background-position: fixed;
+}
+
+.subdiv {
+    background-color: #004444;
+    border: 3px solid #ddd;
+    font-family: 'Courier New';
+    color: #fff!important;
+}
+
+.quote-text {
+  background-color: #ddd!important;
+  color: #000!important;  
+}
+
+.list-group-item {
+    margin-top: 3px;
+}
+
+#twit-icon {
+    filter: invert(1)
+}
