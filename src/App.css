@@ -13,14 +13,11 @@ body {
   .subdiv h3 {
     font-size: 17px !important;
   }
-  .subdiv {
-    text-align: center;
+  .subdiv,
+  #predicament,
+  .credits {
+    text-align: center !important;
   }
-
-  #predicament {
-    text-align: center;
-  }
-
   #buttons {
     justify-content: center;
   }
@@ -30,7 +27,8 @@ body {
 }
 
 @media only screen and (min-width: 1145px) {
-  .subdiv {
+  .subdiv,
+  .credits {
     width: 1015px !important;
     margin-left: auto !important;
     margin-right: auto !important;
@@ -51,8 +49,11 @@ body {
   min-width: 179px;
   color: #fff;
   width: 80%;
+  transition: width 0.5s ease-in-out;
 }
-
+.subdiv > * {
+  transition: left 0.5s;
+}
 #quote-box {
   align-items: center;
 }
@@ -102,6 +103,7 @@ body {
   width: 80%;
   margin-top: -30px;
   margin-right: 5px;
+  transition: width 0.5s ease-in-out;
 }
 
 .credits a {
