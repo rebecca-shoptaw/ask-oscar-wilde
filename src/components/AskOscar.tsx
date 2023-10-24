@@ -167,7 +167,13 @@ const AskOscar = () => {
             src="https://img.icons8.com/ios/50/twitter--v1.png"
             className="align-self-end"
           ></img>
-  </a>*/}
+        </a>*/}
+      </div>
+      <div className="credits">
+        Site design & coding by
+        <a href="https://rebecca-shoptaw.github.io/" target="_blank">
+          Rebecca Shoptaw
+        </a>
       </div>
     </div>
   );
