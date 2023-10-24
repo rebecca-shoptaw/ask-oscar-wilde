@@ -1,24 +1,80 @@
 body {
-    background-image: url('https://media.architecturaldigest.com/photos/60ca52bf629cdf5f72514a19/master/w_1600%2Cc_limit/1_Strawberry%2520ThiefDARW212564.jpg');
-    background-position: fixed;
+  background-color: #454545;
+  background-image: url("https://media.architecturaldigest.com/photos/60ca52bf629cdf5f72514a19/master/w_1600%2Cc_limit/1_Strawberry%2520ThiefDARW212564.jpg");
+  background-blend-mode: multiply;
+  background-position: fixed;
+}
+
+@media (max-width: 503px) {
+  .subdiv h3 {
+    font-size: 17px !important;
+  }
+  .subdiv {
+    text-align: center;
+  }
+
+  #predicament {
+    text-align: center;
+  }
+
+  #buttons {
+    justify-content: center;
+  }
+  #author {
+    align-self: center !important;
+  }
+}
+
+@media only screen and (min-width: 1145px) {
+  .subdiv {
+    width: 1015px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+.d-flex {
+  gap: 20px;
 }
 
 .subdiv {
-    background-color: #004444;
-    border: 3px solid #ddd;
-    font-family: 'Courier New';
-    color: #fff!important;
+  /*background-color: #004444;*/
+  /*border: 3px solid #ddd;*/
+  border: 0.5px solid #ddd;
+  background-color: #1c252d;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 300 !important;
+  min-width: 179px;
+  color: #fff;
+}
+
+.subdiv h3 {
+  font-size: 20px;
+}
+
+.btn {
+  background-color: transparent !important;
+  border: 1px solid #ddd !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.btn:hover {
+  background-color: #ddd !important;
+  color: #004444 !important;
 }
 
 .quote-text {
-  background-color: #ddd!important;
-  color: #000!important;  
+  background-color: #ddd;
+  color: #000;
 }
 
-.list-group-item {
-    margin-top: 3px;
+#predicament {
+  background-color: #ddd;
+  padding: 11px;
+  outline: none !important;
 }
 
 #twit-icon {
-    filter: invert(1)
+  filter: invert(1);
 }

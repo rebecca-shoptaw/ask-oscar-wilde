@@ -1,4 +1,5 @@
-//more quotes here: https://www.wilde-online.info/miscellaneous-aphorisms-page3.html
+//more quotes here: https://www.wilde-online.info/miscellaneous-aphorisms-page4.html
+
 import { useState } from "react";
 
 const quotesArr = [
@@ -55,7 +56,43 @@ const quotesArr = [
   `The truths of metaphysics are the truths of masks.`,
   `Science can never grapple with the irrational. That is why it has no future before it in this world.`,
   `The happy people of the world have their value, but only the negative value of foils. They throw up and emphasise the beauty and the fascination of the unhappy.`,
-  `Experience is simply the name we give our mistakes.`,
+  `There is nothing so difficult to marry as a large nose.`,
+  `In this world there are only two tragedies. One is not getting what one wants, and the other is getting it. The last is much the worst—the last is a real tragedy.`,
+  `Disobedience in the eyes of anyone who has read history is man's original virtue. It is through disobedience that progress has been made—through disobedience and rebellion.`,
+  `It is not wise to find symbols in everything that one sees. It makes life too full of terrors.`,
+  `Comfort is the only thing our civilisation can give us.`,
+  `Politics are my only pleasure.`,
+  `One's past is what one is. It is the only way by which people should be judged.`,
+  `In a very ugly and sensible age the arts borrow, not from life, but from each other.`,
+  `It is always a silly thing to give advice, but to give good advice is fatal.`,
+  `Secrets from other people's wives are a necessary luxury in modern life. So, at least, I am told at the club by people who are bald enough to know better. But no man should have a secret from his own wife. She invariably finds it out. Women have a wonderful instinct about things. They discover everything except the obvious.`,
+  `Life holds the mirror up to art, and either reproduces some strange type imagined by painter or sculptor or realises in fact what has been dreamed in fiction.`,
+  `I feel sure that if I lived in the country for six months I should become so unsophisticated that no one would take the slightest notice of me.`,
+  `To recommend thrift to the poor is both grotesque and insulting. It is like advising a man who is starving to eat less.`,
+  `A thing is not necessarily true because a man dies for it.`,
+  `I am always saying what I shouldn't say; in fact, I usually say what I really think—a great mistake nowadays. It makes one so liable to be misunderstood.`,
+  `Experience is the name everyone gives to their mistakes.`,
+  `The true perfection of man lies, not in what man has, but in what man is.`,
+  `The basis of every scandal is an absolute immoral certainty.`,
+  `People talk so much about the beauty of confidence. They seem to entirely ignore the much more subtle beauty of doubt. To believe is very dull. To doubt is intensely engrossing. To be on the alert is to live, to be lulled into security is to die.`,
+  `Every effect that one produces gives one an enemy. To be popular one must be a mediocrity.`,
+  `It is a sad truth, but we have lost the faculty of giving lovely names to things. Names are everything. I never quarrel with actions, my one quarrel is with words. That is the reason I hate vulgar realism in literature. The man who could call a spade a spade should be compelled to use one. It is the only thing he is fit for.`,
+  `A high moral tone can hardly be said to conduce very much to either one's health or one's happiness.`,
+  `There are terrible temptations that it requires strength—strength and courage—to yield to. To stake all one's life on one throw—whether the stake be power or pleasure I care not—there is no weakness in that. There is a horrible, a terrible, courage.`,
+  `Nowadays it is only the unreadable that occurs.`,
+  `All charming people are spoiled. It is the secret of their attraction.`,
+  `There is more to be said for stupidity than people imagine. Personally, I have a great admiration for stupidity. It is a sort of fellow-feeling, I suppose.`,
+  `All men are monsters. The only thing to do is to feed the wretches well. A good cook does wonders.`,
+  `There is no such thing as an omen.`,
+  `Destiny does not send us heralds. She is too wise or too cruel for that.`,
+  `Crying is the refuge of plain women but the ruin of pretty ones.`,
+  `Love art for its own sake and then all things that you need will be added to you. This devotion to beauty and to the creation of beautiful things is the test of all great civilisations; it is what makes the life of each citizen a sacrament and not a speculation.`,
+  `It is always worth while asking a question, though it is not always answering one.`,
+  `It takes a thoroughly good woman to do a thoroughly stupid thing.`,
+  `With a proper background women can do anything.`,
+  `Chiromancy is a most dangerous science, and one that ought not to be encouraged, except in a 'tête-à-tête.'`,
+  `One should never take sides in anything. Taking sides is the beginning of sincerity, and earnestness follows shortly afterwards, and the human being becomes a bore.`,
+  `A map of the world that does not include Utopia is not worth even glancing at, for it leaves out the one country at which Humanity is always landing. And when Humanity lands there, it looks out, and, seeing a better country, sets sail. Progress is the realisation of Utopias.`,
 ];
 
 const AskOscar = () => {
@@ -68,41 +105,61 @@ const AskOscar = () => {
       setQuote(quotesArr[Math.floor(Math.random() * quotesArr.length)]);
       console.log(link);
     }
+  };
+  const clearInput = () => {
     setInput("");
+    setQuote("With what else may I assist you?");
+    const inputElem = document.querySelector("textarea");
+    if (inputElem) {
+      inputElem.focus();
+    }
   };
 
-  let link =
+  const link =
     "https://twitter.com/intent/tweet?text=%22" +
     quote.split(" ").join("%20") +
     "%22%20Oscar%20Wilde";
 
   return (
-    <div id="oscar" className="d-flex flex-column m-5 justify-content-center">
+    <div
+      id="quote-box"
+      className="d-flex flex-column m-5 justify-content-center"
+    >
       <div id="input" className="subdiv p-4 m-3">
-        <h3 className="mb-3">Submit your predicament:</h3>
-        <input
-          className="input-group input-group-sm mb-3 "
+        <h3 className="mb-4">Submit your predicament:</h3>
+        <textarea
+          id="predicament"
+          className="input-group input-group-sm mb-3 mt-1"
           onChange={(event) => setInput(event.target.value)}
           value={input}
-        ></input>
-        <button
-          id="new-quote"
-          className="btn btn-secondary"
-          onClick={newQuote}
-          type="submit"
-        >
-          Submit
-        </button>
+          autoFocus
+        ></textarea>
+        <div id="buttons" className="d-flex flex-row flex-wrap">
+          <button
+            id="new-quote"
+            className="btn btn-secondary"
+            onClick={newQuote}
+          >
+            Submit
+          </button>
+          <button
+            id="new-predicament"
+            className="btn btn-secondary"
+            onClick={clearInput}
+          >
+            New Predicament
+          </button>
+        </div>
       </div>
-      <div id="quote-box" className="subdiv p-4 m-3  d-flex flex-column">
-        <h3 className="mb-3">Here is what Oscar has to say:</h3>
-        <p id="text" className="quote-text p-3">
+      <div id="quote" className="subdiv p-4 m-3  d-flex flex-column">
+        <h3 className="mb-1">Here is what Oscar has to say:</h3>
+        <p id="text" className="quote-text p-3 mb-1 mt-0">
           "{quote}"
         </p>
-        <p id="author" className="align-self-end mt-3">
+        <p id="author" className="align-self-end mt-0.5 mb-1">
           - Oscar Wilde
         </p>
-        <a id="tweet-quote" href={link} target="_blank">
+        {/*<a id="tweet-quote" href={link} target="_blank" rel="noreferrer">
           <img
             id="twit-icon"
             width="30"
@@ -110,7 +167,7 @@ const AskOscar = () => {
             src="https://img.icons8.com/ios/50/twitter--v1.png"
             className="align-self-end"
           ></img>
-        </a>
+  </a>*/}
       </div>
     </div>
   );
