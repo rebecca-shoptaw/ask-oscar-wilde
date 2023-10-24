@@ -1,8 +1,12 @@
-body {
-  background-color: #454545;
+html {
+  background-color: #727272;
   background-image: url("https://media.architecturaldigest.com/photos/60ca52bf629cdf5f72514a19/master/w_1600%2Cc_limit/1_Strawberry%2520ThiefDARW212564.jpg");
   background-blend-mode: multiply;
   background-position: fixed;
+}
+
+body {
+  background: transparent !important;
 }
 
 @media (max-width: 503px) {
