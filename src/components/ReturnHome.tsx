@@ -2,7 +2,7 @@ import React from "react";
 
 const ReturnHome = () => {
   return (
-    <a href="https://rebecca-shoptaw.github.io/">
+    <a href="https://rebeccashoptaw.dev/">
       <i className="bi bi-x back-btn" />
     </a>
   );
