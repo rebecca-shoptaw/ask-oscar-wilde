@@ -14,6 +14,7 @@ const AskOscar = () => {
   const clearInput = () => {
     setInput("");
     setQuote("With what else may I assist you?");
+
     inputRef.current?.focus();
   };
 

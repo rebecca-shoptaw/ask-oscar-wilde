@@ -1,8 +1,13 @@
+* {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
 html {
   background-color: #727272;
   background-image: url("./assets/strawberry-thief-background.webp");
   background-blend-mode: multiply;
-  background-position: fixed;
+  background-attachment: fixed;
 }
 
 body {
@@ -14,8 +19,6 @@ body {
 }
 
 .subdiv {
-  /*background-color: #004444;*/
-  /*border: 3px solid #ddd;*/
   border: 0.5px solid #ddd;
   background-color: #1c252d;
   font-family: "DM Sans", sans-serif;
@@ -23,11 +26,8 @@ body {
   min-width: 179px;
   color: #fff;
   width: 80%;
-  transition: width 0.5s ease-in-out;
 }
-.subdiv > * {
-  transition: left 0.5s;
-}
+
 #quote-box {
   align-items: center;
 }
@@ -40,12 +40,22 @@ body {
   background-color: transparent !important;
   border: 1px solid #ddd !important;
   outline: none !important;
-  box-shadow: none !important;
+  box-shadow: 1px 2px #ddd;
+  transition: translate 0.5s;
 }
 
 .btn:hover {
-  background-color: #ddd !important;
-  color: #004444 !important;
+  background-color: #13191f !important;
+}
+
+.btn:active {
+  transform: translateY(2px) translateX(1px);
+  background-color: #fff;
+  box-shadow: none !important;
+}
+
+.btn:focus {
+  box-shadow: 1px 2px #ddd;
 }
 
 .quote-text {
@@ -57,10 +67,6 @@ body {
   background-color: #ddd;
   padding: 11px;
   outline: none !important;
-}
-
-#twit-icon {
-  filter: invert(1);
 }
 
 .credits,
