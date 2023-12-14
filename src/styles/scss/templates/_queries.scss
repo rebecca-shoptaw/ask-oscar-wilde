@@ -1,0 +1,28 @@
+@media only screen and (max-width: 503px) {
+  .tile h3 {
+    font-size: 17px;
+  }
+
+  .tile,
+  .tile > *,
+  .credits {
+    text-align: center !important;
+  }
+
+  #buttons {
+    justify-content: center;
+  }
+
+  #author {
+    align-self: center !important;
+  }
+}
+
+@media only screen and (min-width: 1145px) {
+  .tile,
+  .credits {
+    width: 1015px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}

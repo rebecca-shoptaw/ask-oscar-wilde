@@ -1,0 +1,22 @@
+* {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+  transition: all 0.5s;
+}
+
+html {
+  @include imgBackground($src: "src/assets/strawberry-thief-background.webp");
+
+  body {
+    @include transparentBack;
+  }
+
+  main {
+    align-items: center;
+  }
+}
+
+.d-flex {
+  gap: 20px;
+}

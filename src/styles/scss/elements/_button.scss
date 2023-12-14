@@ -1,0 +1,27 @@
+%button {
+  $x-shadow: 1px;
+  $y-shadow: 2px;
+
+  @include transparentBack;
+  @include offWhiteBorder(1px);
+  @include noOutline;
+  @include offWhiteShadow($x-shadow, $y-shadow);
+
+  &:hover,
+  &:active {
+    background-color: $darker-blue-back !important;
+  }
+
+  &:active {
+    box-shadow: none !important;
+    transform: translateX($x-shadow) translateY($y-shadow);
+  }
+
+  &:focus {
+    @include offWhiteShadow($x-shadow, $y-shadow);
+  }
+}
+
+.btn {
+  @extend %button;
+}

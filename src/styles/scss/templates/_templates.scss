@@ -1,0 +1,29 @@
+@mixin imgBackground($src) {
+  background-color: $multiply-back;
+  background-image: url($src);
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+}
+
+@mixin transparentBack {
+  background: transparent !important;
+}
+
+@mixin noOutline {
+  outline: none !important;
+}
+
+@mixin offWhiteBorder($width) {
+  border: $width solid $off-white !important;
+}
+
+@mixin offWhiteShadow($x, $y) {
+  box-shadow: $x $y $off-white;
+}
+
+@mixin flexColumn($gap, $text) {
+  display: flex;
+  flex-direction: column;
+  gap: $gap;
+  text-align: $text;
+}

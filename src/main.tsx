@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
-import "./App.css";
+import "./styles/css/styles.css";
 import "./ReturnHome.css";
 import "bootstrap/dist/css/bootstrap.css";
 

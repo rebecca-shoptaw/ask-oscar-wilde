@@ -1,0 +1,31 @@
+%tile {
+  @include offWhiteBorder(0.5px);
+  background-color: $blue-back;
+  min-width: 179px;
+  width: 80%;
+}
+
+.tile {
+  @extend %tile;
+
+  h3 {
+    color: $full-white;
+    font-size: 20px;
+  }
+
+  #author {
+    color: $off-white;
+  }
+
+  .quote-text,
+  %text-box {
+    background-color: $off-white;
+    color: black;
+  }
+
+  #predicament {
+    @extend %text-box;
+    padding: 11px;
+    @include noOutline;
+  }
+}

@@ -19,11 +19,11 @@ const AskOscar = () => {
   };
 
   return (
-    <div
+    <main
       id="quote-box"
       className="d-flex flex-column m-5 justify-content-center"
     >
-      <div id="input" className="subdiv p-4 m-3">
+      <div id="input" className="tile p-4 m-3">
         <h3 className="mb-4">Submit your predicament:</h3>
         <textarea
           id="predicament"
@@ -50,7 +50,7 @@ const AskOscar = () => {
           </button>
         </div>
       </div>
-      <div id="quote" className="subdiv p-4 m-3  d-flex flex-column">
+      <div id="quote" className="tile p-4 m-3  d-flex flex-column">
         <h3 className="mb-1">Here is what Oscar has to say:</h3>
         <p id="text" className="quote-text p-3 mb-1 mt-0">
           "{quote}"
@@ -65,7 +65,7 @@ const AskOscar = () => {
           Rebecca Shoptaw
         </a>
       </div>
-    </div>
+    </main>
   );
 };
 
