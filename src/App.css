@@ -1,38 +1,12 @@
 html {
   background-color: #727272;
-  background-image: url("https://media.architecturaldigest.com/photos/60ca52bf629cdf5f72514a19/master/w_1600%2Cc_limit/1_Strawberry%2520ThiefDARW212564.jpg");
+  background-image: url("./assets/strawberry-thief-background.webp");
   background-blend-mode: multiply;
   background-position: fixed;
 }
 
 body {
   background: transparent !important;
-}
-
-@media only screen and (max-width: 503px) {
-  .subdiv h3 {
-    font-size: 17px !important;
-  }
-  .subdiv,
-  #predicament,
-  .credits {
-    text-align: center !important;
-  }
-  #buttons {
-    justify-content: center;
-  }
-  #author {
-    align-self: center !important;
-  }
-}
-
-@media only screen and (min-width: 1145px) {
-  .subdiv,
-  .credits {
-    width: 1015px !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-  }
 }
 
 .d-flex {
@@ -112,5 +86,31 @@ body {
 }
 
 .credits a:hover {
-  color: #fff !important;
+  color: #fff;
+}
+
+@media only screen and (max-width: 503px) {
+  .subdiv h3 {
+    font-size: 17px;
+  }
+  .subdiv,
+  #predicament,
+  .credits {
+    text-align: center;
+  }
+  #buttons {
+    justify-content: center;
+  }
+  #author {
+    align-self: center;
+  }
+}
+
+@media only screen and (min-width: 1145px) {
+  .subdiv,
+  .credits {
+    width: 1015px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
