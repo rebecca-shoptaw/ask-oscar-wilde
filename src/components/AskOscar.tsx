@@ -1,24 +1,20 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import oscarQuotes from "../data/OscarQuotes";
 
 const AskOscar = () => {
   const [input, setInput] = useState("");
   const [quote, setQuote] = useState("Tell me about your troubles.");
+  const inputRef = useRef<HTMLTextAreaElement>(null);
 
-  const newQuote = () => {
-    if (input == "") {
-      setQuote("Why won't you tell me what ails you??");
-    } else {
-      setQuote(oscarQuotes[Math.floor(Math.random() * oscarQuotes.length)]);
-    }
-  };
+  const newQuote = () =>
+    input == ""
+      ? setQuote("Why won't you tell me what ails you??")
+      : setQuote(oscarQuotes[Math.floor(Math.random() * oscarQuotes.length)]);
+
   const clearInput = () => {
     setInput("");
     setQuote("With what else may I assist you?");
-    const inputElem = document.querySelector("textarea");
-    if (inputElem) {
-      inputElem.focus();
-    }
+    inputRef.current?.focus();
   };
 
   return (
@@ -33,6 +29,7 @@ const AskOscar = () => {
           className="input-group input-group-sm mb-3 mt-1"
           onChange={(event) => setInput(event.target.value)}
           value={input}
+          ref={inputRef}
           autoFocus
         ></textarea>
         <div id="buttons" className="d-flex flex-row flex-wrap">
