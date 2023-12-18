@@ -6,7 +6,7 @@
 }
 
 html {
-  @include imgBackground($src: "src/assets/strawberry-thief-background.webp");
+  @include imgBackground($src: "/strawberry-thief-background.webp");
 
   body {
     @include transparentBack;
