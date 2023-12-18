@@ -1,6 +1,8 @@
 # Ask Oscar Wilde 🐦‍⬛🥂
 
-A Magic 8 ball style site where Oscar Wilde quotes appear in response to user predicaments. . [Live Site](https://rebeccashoptaw.dev/ask-oscar-wilde/).
+A Magic 8 ball style site where Oscar Wilde quotes appear in response to user predicaments.
+
+<a href="https://rebeccashoptaw.dev/ask-oscar-wilde/"><button>Live Site</button></a>
 
 <img width="100%"  alt="Ask Oscar interface" src="https://github.com/rebecca-shoptaw/rebecca-shoptaw.github.io/blob/main/public/ask-oscar-wilde.png">
 
