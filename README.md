@@ -34,7 +34,7 @@ If they select "New Predicament", the input will clear, and Oscar will ask what 
 
 ## Implementation
 
-The implementation is quite straightforward as well -- just about everything happens within the `AskOscar` component, and relies on two simple functions -- `newQuote` and `clearInput` -- and two state values, one to store the user input and one to store the current Ocar Wilde quote.
+The implementation is quite straightforward as well -- just about everything happens within the `AskOscar` component, and relies on two simple functions -- `newQuote` and `clearInput` -- and two state values, one to store the user input and one to store the current Oscar Wilde quote.
 
 The `newQuote` function, which fires when the user hits "Submit," checks to determine that there is a user input, then selects a random quote from the `oscarQuotes` array, stored separately:
 
