@@ -22,9 +22,9 @@ The idea behind Ask Oscar Wilde was twofold: first, to bring back some of the fu
 
 The current version of the UI is very straightforward -- the user sees an empty autofocused input box where they are encouraged to enter a predicament, and when they click "Submit", a random Oscar Wilde quote is generated as a response.
 
-<img width="60%" alt="Oscar Wilde UI" src="https://github.com/rebecca-shoptaw/ask-oscar-wilde/blob/master/src/assets/UI_1.png">
+<img width="60%" alt="Oscar Wilde UI Part 1" src="https://github.com/rebecca-shoptaw/ask-oscar-wilde/blob/master/src/assets/UI_1.png">
 
-<img width="60%" alt="Oscar Wilde UI" src="https://github.com/rebecca-shoptaw/ask-oscar-wilde/blob/master/src/assets/UI_1.png">
+<img width="60%" alt="Oscar Wilde UI Part 2" src="https://github.com/rebecca-shoptaw/ask-oscar-wilde/blob/master/src/assets/UI_2.png">
 
 If the user hits submit again, they will see a fresh quote, but if they try to hit submit without entering a predicament, Oscar will ask "Why won't you tell me what's troubling you??"
 
