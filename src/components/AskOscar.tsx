@@ -14,7 +14,6 @@ const AskOscar = () => {
   const clearInput = () => {
     setInput("");
     setQuote("With what else may I assist you?");
-
     inputRef.current?.focus();
   };
 
@@ -28,7 +27,7 @@ const AskOscar = () => {
         <textarea
           id="predicament"
           className="input-group input-group-sm mb-3 mt-1"
-          onChange={(event) => setInput(event.target.value)}
+          onChange={(e) => setInput(e.target.value)}
           value={input}
           ref={inputRef}
           autoFocus
