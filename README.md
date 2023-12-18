@@ -58,7 +58,7 @@ The `clearInput` function, which fires when the user hits "New Predicament," res
 - [x] Redo styling using SASS
 - [ ] Replace remaining Boostrap classes with SASS code
 - [ ] Use GSAP to create a fun quote loading and reveal animation
-- [ ] Add a test suite via Jest 
+- [ ] Add a test suite via Jest
 
 ## License
 
@@ -79,9 +79,9 @@ Rebecca Shoptaw -
 [TS-url]: https://www.typescriptlang.org/
 [HTML-icon]: https://img.shields.io/badge/-HTML5-20232A?style=for-the-badge&logo=html5&logoColor=E34F26
 [HTML-url]: https://www.w3schools.com/html/
-[CSS-icon]: https://img.shields.io/badge/-CSS3-20232A?style=for-the-badge&logo=css3&logoColor=CC6699
+[CSS-icon]: https://img.shields.io/badge/-CSS3-20232A?style=for-the-badge&logo=css3&logoColor=1572B6
 [CSS-url]: https://www.w3schools.com/css/
-[SASS-icon]: https://img.shields.io/badge/-Sass-20232A?style=for-the-badge&logo=css3&logoColor=1572B6
+[SASS-icon]: https://img.shields.io/badge/-Sass-20232A?style=for-the-badge&logo=sass&logoColor=CC6699
 [SASS-url]: https://sass-lang.com/
-[Bootstrap-icon]: https://img.shields.io/badge/-Bootstrap-20232A?style=for-the-badge&logo=css3&logoColor=7952B3
+[Bootstrap-icon]: https://img.shields.io/badge/-Bootstrap-20232A?style=for-the-badge&logo=bootstrap&logoColor=7952B3
 [Bootstrap-url]: https://getbootstrap.com/
