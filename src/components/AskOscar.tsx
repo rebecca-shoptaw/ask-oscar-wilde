@@ -17,54 +17,52 @@ const AskOscar = () => {
     inputRef.current?.focus();
   };
 
+  
+
   return (
-    <main
-      id="quote-box"
-      className="d-flex flex-column m-5 justify-content-center"
-    >
-      <div id="input" className="tile p-4 m-3">
-        <h3 className="mb-4">Submit your predicament:</h3>
-        <textarea
-          id="predicament"
-          className="input-group input-group-sm mb-3 mt-1"
-          onChange={(e) => setInput(e.target.value)}
-          value={input}
-          ref={inputRef}
-          autoFocus
-        ></textarea>
-        <div id="buttons" className="d-flex flex-row flex-wrap">
-          <button
-            id="new-quote"
-            className="btn btn-secondary"
-            onClick={newQuote}
-          >
-            Submit
-          </button>
-          <button
-            id="new-predicament"
-            className="btn btn-secondary"
-            onClick={clearInput}
-          >
-            New Predicament
-          </button>
-        </div>
-      </div>
-      <div id="quote" className="tile p-4 m-3  d-flex flex-column">
-        <h3 className="mb-1">Here is what Oscar has to say:</h3>
-        <p id="text" className="quote-text p-3 mb-1 mt-0">
-          "{quote}"
-        </p>
-        <p id="author" className="align-self-end mt-0.5 mb-1">
-          - Oscar Wilde
-        </p>
-      </div>
-      <div className="credits">
+    <>
+      <main>
+        <section id="input-section" className="tile">
+          <h3>Submit your predicament:</h3>
+          <textarea
+            id="predicament"
+            onChange={(e) => setInput(e.target.value)}
+            value={input}
+            ref={inputRef}
+            autoFocus
+          ></textarea>
+          <div id="buttons">
+            <button
+              type="button"
+              id="new-quote"
+              className="button"
+              onClick={newQuote}
+            >
+              Submit
+            </button>
+            <button
+              type="button"
+              id="new-predicament"
+              className="button"
+              onClick={clearInput}
+            >
+              New Predicament
+            </button>
+          </div>
+        </section>
+        <section id="quote-section" className="tile">
+          <h3>Here is what Oscar has to say:</h3>
+          <p id="quote-text">"{quote}"</p>
+          <p id="author">- Oscar Wilde</p>
+        </section>
+      </main>
+      <footer className="credits">
         Site design & coding by
         <a href="https://rebeccashoptaw.dev/" target="_blank">
           Rebecca Shoptaw
         </a>
-      </div>
-    </main>
+      </footer>
+    </>
   );
 };
 

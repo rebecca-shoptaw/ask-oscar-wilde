@@ -15,51 +15,80 @@ html body {
   background: transparent !important;
 }
 html main {
-  align-items: center;
-}
-
-.d-flex {
+  display: flex;
+  flex-direction: column;
   gap: 20px;
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem;
 }
 
 .tile {
+  border-radius: 5px;
   border: 0.5px solid #ddd !important;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left;
+  align-items: left;
+  justify-content: left;
   background-color: #1c252d;
   min-width: 179px;
   width: 80%;
+  padding: 1.5rem;
+  margin: 1rem;
 }
-
 .tile h3 {
   color: #fff;
   font-size: 20px;
+  margin-bottom: -3px;
 }
-.tile #author {
-  color: #ddd;
-}
-.tile .quote-text,
-.tile #predicament {
+.tile #predicament, .tile #quote-text {
+  border-radius: 5px;
   background-color: #ddd;
   color: black;
 }
+.tile #quote-text {
+  padding: 1rem;
+  margin-bottom: 0.25rem;
+  margin-top: 0;
+}
 .tile #predicament {
-  padding: 11px;
   outline: none !important;
+  padding: 11px;
+  margin-bottom: 1rem;
+}
+.tile #author {
+  color: #ddd;
+  align-self: flex-end;
+  margin-bottom: 0.25rem;
+  cursor: default;
 }
 
-.btn {
+#buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+#buttons .button {
   background: transparent !important;
   border: 1px solid #ddd !important;
   outline: none !important;
   box-shadow: 1px 2px #ddd;
+  border-radius: 5px;
+  color: #ddd;
+  padding: 5px 10px;
 }
-.btn:hover, .btn:active {
+#buttons .button:hover, #buttons .button:active {
   background-color: #13191f !important;
 }
-.btn:active {
+#buttons .button:active {
   box-shadow: none !important;
   transform: translateX(1px) translateY(2px);
 }
-.btn:focus {
+#buttons .button:focus {
   box-shadow: 1px 2px #ddd;
 }
 
@@ -68,12 +97,14 @@ html main {
   flex-direction: column;
   gap: 0px;
   text-align: right;
+  align-items: right;
+  justify-content: right;
+  margin: 3rem;
   color: #ddd;
   font-size: 14px;
-  width: 80%;
-  margin-top: -30px;
-  margin-right: 5px;
   line-height: 1.2;
+  margin-top: -60px;
+  padding-right: 10%;
 }
 .credits a {
   color: #ddd;
@@ -93,6 +124,9 @@ html main {
   .credits {
     text-align: center !important;
   }
+  .credits {
+    padding-right: 0px;
+  }
   #buttons {
     justify-content: center;
   }
@@ -106,6 +140,9 @@ html main {
     width: 1015px !important;
     margin-left: auto !important;
     margin-right: auto !important;
+  }
+  .credits {
+    padding-right: 5px;
   }
 }
 

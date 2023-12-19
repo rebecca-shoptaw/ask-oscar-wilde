@@ -1,11 +1,11 @@
 .credits {
-  @include flexColumn($gap: 0px, $text: right);
+  @include flexColumn($gap: 0px, $text: right, $align: right, $justify: right);
+  @include bigMargin;
   color: $off-white;
   font-size: 14px;
-  width: 80%;
-  margin-top: -30px;
-  margin-right: 5px;
   line-height: 1.2;
+  margin-top: -60px;
+  padding-right: 10%;
 
   a {
     color: $off-white;

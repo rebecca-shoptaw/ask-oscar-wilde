@@ -13,10 +13,12 @@ html {
   }
 
   main {
-    align-items: center;
+    @include flexColumn(
+      $gap: 20px,
+      $text: left,
+      $align: center,
+      $justify: center
+    );
+    @include bigMargin;
   }
-}
-
-.d-flex {
-  gap: 20px;
 }

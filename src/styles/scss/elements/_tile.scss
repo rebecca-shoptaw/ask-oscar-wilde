@@ -1,31 +1,43 @@
-%tile {
+.tile {
+  @include roundBorder;
   @include offWhiteBorder(0.5px);
+  @include flexColumn($gap: 15px, $text: left, $align: left, $justify: left);
   background-color: $blue-back;
   min-width: 179px;
   width: 80%;
-}
-
-.tile {
-  @extend %tile;
+  padding: 1.5rem;
+  margin: 1rem;
 
   h3 {
     color: $full-white;
     font-size: 20px;
+    margin-bottom: -3px;
   }
 
-  #author {
-    color: $off-white;
-  }
-
-  .quote-text,
   %text-box {
+    @include roundBorder;
     background-color: $off-white;
     color: black;
   }
 
+  #quote-text {
+    @extend %text-box;
+    padding: 1rem;
+    margin-bottom: 0.25rem;
+    margin-top: 0;
+  }
+
   #predicament {
     @extend %text-box;
-    padding: 11px;
     @include noOutline;
+    padding: 11px;
+    margin-bottom: 1rem;
+  }
+
+  #author {
+    color: $off-white;
+    align-self: flex-end;
+    margin-bottom: 0.25rem;
+    cursor: default;
   }
 }

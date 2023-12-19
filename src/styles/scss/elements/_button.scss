@@ -1,25 +1,31 @@
-.btn {
-  $x-shadow: 1px;
-  $y-shadow: 2px;
+#buttons {
+  @include flexRow($gap: 20px, $wrap: wrap);
 
-  @include transparentBack;
-  @include offWhiteBorder(1px);
-  @include noOutline;
-  @include offWhiteShadow($x-shadow, $y-shadow);
+  .button {
+    $x-shadow: 1px;
+    $y-shadow: 2px;
 
-  &:hover,
-  &:active {
-    background-color: $darker-blue-back !important;
-  }
-
-  &:active {
-    box-shadow: none !important;
-    transform: translateX($x-shadow) translateY($y-shadow);
-  }
-
-  &:focus {
+    @include transparentBack;
+    @include offWhiteBorder(1px);
+    @include noOutline;
     @include offWhiteShadow($x-shadow, $y-shadow);
+    @include roundBorder;
+
+    color: $off-white;
+    padding: 5px 10px;
+
+    &:hover,
+    &:active {
+      background-color: $darker-blue-back !important;
+    }
+
+    &:active {
+      box-shadow: none !important;
+      transform: translateX($x-shadow) translateY($y-shadow);
+    }
+
+    &:focus {
+      @include offWhiteShadow($x-shadow, $y-shadow);
+    }
   }
 }
-
-

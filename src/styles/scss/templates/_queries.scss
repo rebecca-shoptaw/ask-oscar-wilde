@@ -9,6 +9,10 @@
     text-align: center !important;
   }
 
+  .credits {
+    padding-right: 0px;
+  }
+
   #buttons {
     justify-content: center;
   }
@@ -24,5 +28,9 @@
     width: 1015px !important;
     margin-left: auto !important;
     margin-right: auto !important;
+  }
+
+  .credits {
+    padding-right: 5px;
   }
 }

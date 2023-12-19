@@ -5,6 +5,26 @@
   background-attachment: fixed;
 }
 
+@mixin flexColumn($gap, $text, $align, $justify) {
+  display: flex;
+  flex-direction: column;
+  gap: $gap;
+  text-align: $text;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+@mixin flexRow($gap, $wrap) {
+  display: flex;
+  flex-direction: row;
+  gap: $gap;
+  flex-wrap: $wrap;
+}
+
+@mixin bigMargin {
+  margin: 3rem;
+}
+
 @mixin transparentBack {
   background: transparent !important;
 }
@@ -17,13 +37,14 @@
   border: $width solid $off-white !important;
 }
 
+@mixin roundBorder {
+  border-radius: 5px;
+}
+
 @mixin offWhiteShadow($x, $y) {
   box-shadow: $x $y $off-white;
 }
 
-@mixin flexColumn($gap, $text) {
-  display: flex;
-  flex-direction: column;
-  gap: $gap;
-  text-align: $text;
+@mixin tempBorder {
+  border: 1px solid #fff;
 }
