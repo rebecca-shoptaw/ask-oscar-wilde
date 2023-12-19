@@ -17,7 +17,13 @@ const AskOscar = () => {
     inputRef.current?.focus();
   };
 
-  
+  document.addEventListener("keydown", (e) => {
+    if (e.key == "Enter") {
+      e.preventDefault();
+      let submitBtn = document.getElementById("new-quote");
+      submitBtn?.click();
+    }
+  });  
 
   return (
     <>
