@@ -92,6 +92,19 @@ html main {
   box-shadow: 1px 2px #ddd;
 }
 
+.back-btn {
+  position: fixed;
+  top: 0px;
+  right: 10px;
+  font-size: 30px;
+  color: #fff !important;
+  transition: opacity 0.2s;
+}
+
+.back-btn:hover {
+  opacity: 0.75;
+}
+
 .credits {
   display: flex;
   flex-direction: column;
