@@ -120,9 +120,8 @@ html main {
     font-size: 17px;
   }
   .tile,
-  .tile > *,
   .credits {
-    text-align: center !important;
+    text-align: center;
   }
   .credits {
     padding-right: 0px;
