@@ -37,10 +37,10 @@ const AskOscar = () => {
             ref={inputRef}
             autoFocus
           ></textarea>
-          <div id="buttons">
+          <section id="buttons">
             <button
               type="button"
-              id="new-quote"
+              id="new-quote-btn"
               className="button"
               onClick={newQuote}
             >
@@ -48,13 +48,13 @@ const AskOscar = () => {
             </button>
             <button
               type="button"
-              id="new-predicament"
+              id="new-predicament-btn"
               className="button"
               onClick={clearInput}
             >
               New Predicament
             </button>
-          </div>
+          </section>
         </section>
         <section id="quote-section" className="tile">
           <h3>Here is what Oscar has to say:</h3>
