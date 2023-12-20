@@ -59,6 +59,7 @@ The `clearInput` function, which fires when the user hits "New Predicament," res
 
 - [x] Redo styling using SASS
 - [x] Replace remaining Bootstrap classes with SASS code
+- [x] Use meta and Schema.org tags to improve SEO
 - [ ] Use GSAP to create a fun quote loading and reveal animation
 - [ ] Add a test suite via Jest
 

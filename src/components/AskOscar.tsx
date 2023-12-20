@@ -23,7 +23,7 @@ const AskOscar = () => {
       let submitBtn = document.getElementById("new-quote");
       submitBtn?.click();
     }
-  });  
+  });
 
   return (
     <>
@@ -59,12 +59,14 @@ const AskOscar = () => {
         <section id="quote-section" className="tile">
           <h3>Here is what Oscar has to say:</h3>
           <p id="quote-text">"{quote}"</p>
-          <p id="author">- Oscar Wilde</p>
+          <p id="author">
+            - Oscar Wilde
+          </p>
         </section>
       </main>
       <footer className="credits">
         Site design & coding by
-        <a href="https://rebeccashoptaw.dev/" target="_blank">
+        <a rel="author" href="https://rebeccashoptaw.dev/" target="_blank">
           Rebecca Shoptaw
         </a>
       </footer>
