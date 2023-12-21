@@ -1,29 +1,21 @@
-import { useState, useRef } from "react";
-import oscarQuotes from "../data/OscarQuotes";
+import { useNewQuote } from "../hooks/useNewQuote";
+import { useInput } from "../hooks/useInput";
 
 const AskOscar = () => {
-  const [input, setInput] = useState("");
-  const [quote, setQuote] = useState("Tell me about your troubles.");
-  const inputRef = useRef<HTMLTextAreaElement>(null);
-
-  const newQuote = () =>
-    input == ""
-      ? setQuote("Why won't you tell me what ails you??")
-      : setQuote(oscarQuotes[Math.floor(Math.random() * oscarQuotes.length)]);
-
-  const clearInput = () => {
-    setInput("");
-    setQuote("With what else may I assist you?");
-    inputRef.current?.focus();
-  };
+  const { input, inputRef, clearInput, handleInputUpdate } = useInput();
+  const { quote, handleInput, handleReset } = useNewQuote(input);
 
   document.addEventListener("keydown", (e) => {
     if (e.key == "Enter") {
       e.preventDefault();
-      let submitBtn = document.getElementById("new-quote");
-      submitBtn?.click();
+      handleInput();
     }
   });
+
+  const handleNewPredicament = () => {
+    handleReset();
+    clearInput();
+  };
 
   return (
     <>
@@ -32,7 +24,7 @@ const AskOscar = () => {
           <h3>Submit your predicament:</h3>
           <textarea
             id="predicament"
-            onChange={(e) => setInput(e.target.value)}
+            onChange={(e) => handleInputUpdate(e.target.value)}
             value={input}
             ref={inputRef}
             autoFocus
@@ -42,7 +34,7 @@ const AskOscar = () => {
               type="button"
               id="new-quote-btn"
               className="button"
-              onClick={newQuote}
+              onClick={handleInput}
             >
               Submit
             </button>
@@ -50,7 +42,7 @@ const AskOscar = () => {
               type="button"
               id="new-predicament-btn"
               className="button"
-              onClick={clearInput}
+              onClick={handleNewPredicament}
             >
               New Predicament
             </button>
@@ -59,9 +51,7 @@ const AskOscar = () => {
         <section id="quote-section" className="tile">
           <h3>Here is what Oscar has to say:</h3>
           <p id="quote-text">"{quote}"</p>
-          <p id="author">
-            - Oscar Wilde
-          </p>
+          <p id="author">- Oscar Wilde</p>
         </section>
       </main>
       <footer className="credits">
