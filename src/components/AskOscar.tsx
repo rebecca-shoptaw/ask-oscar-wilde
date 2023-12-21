@@ -5,13 +5,6 @@ const AskOscar = () => {
   const { input, inputRef, clearInput, handleInputUpdate } = useInput();
   const { quote, handleInput, handleReset } = useNewQuote(input);
 
-  document.addEventListener("keydown", (e) => {
-    if (e.key == "Enter") {
-      e.preventDefault();
-      handleInput();
-    }
-  });
-
   const handleNewPredicament = () => {
     handleReset();
     clearInput();

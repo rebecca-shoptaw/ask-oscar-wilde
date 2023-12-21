@@ -9,5 +9,12 @@ export const useNewQuote = (input: string) => {
       ? setQuote("Why won't you tell me what ails you??")
       : setQuote(oscarQuotes[Math.floor(Math.random() * oscarQuotes.length)]);
 
+  document.addEventListener("keydown", (e) => {
+    if (e.key == "Enter") {
+      e.preventDefault();
+      handleInput();
+    }
+  });
+
   return { quote, handleInput, handleReset };
 };
