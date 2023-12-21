@@ -1,4 +1,6 @@
-const Controls = ({ handleInput, handleReset, clearInput }: controlsProps) => {
+const Controls = (props: controlsProps) => {
+  const { handleInput, handleReset, clearInput } = props;
+
   const handleNewPredicament = () => {
     handleReset();
     clearInput();

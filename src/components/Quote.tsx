@@ -1,4 +1,6 @@
-const Quote = ({ quote }: quoteProps) => {
+const Quote = (props: quoteProps) => {
+  const { quote } = props;
+
   return (
     <section id="quote-section" className="tile">
       <h3>Here is what Oscar has to say:</h3>

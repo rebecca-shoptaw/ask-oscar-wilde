@@ -1,7 +1,9 @@
 import Controls from "./Controls";
 
-const Input = ({ inputInfo, handleInput, handleReset }: inputProps) => {
+const Input = (props: inputProps) => {
+  const { inputInfo, handleInput, handleReset } = props;
   const { input, inputRef, clearInput, handleInputUpdate } = inputInfo;
+
   return (
     <section id="input-section" className="tile">
       <h3>Submit your predicament:</h3>
