@@ -20,11 +20,15 @@
     color: black;
   }
 
-  #quote-text {
+  #quote {
     @extend %text-box;
-    padding: 1rem;
+    display: block;
     margin-bottom: 0.25rem;
     margin-top: 0;
+  }
+
+  #quote-text {
+    padding: 20px;
   }
 
   #predicament {

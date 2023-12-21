@@ -2,7 +2,6 @@
   scroll-behavior: smooth;
   box-sizing: border-box;
   font-family: "DM Sans", sans-serif;
-  transition: all 0.5s;
 }
 
 html {
@@ -44,15 +43,18 @@ html main {
   font-size: 20px;
   margin-bottom: -3px;
 }
-.tile #predicament, .tile #quote-text {
+.tile #predicament, .tile #quote {
   border-radius: 5px;
   background-color: #ddd;
   color: black;
 }
-.tile #quote-text {
-  padding: 1rem;
+.tile #quote {
+  display: block;
   margin-bottom: 0.25rem;
   margin-top: 0;
+}
+.tile #quote-text {
+  padding: 20px;
 }
 .tile #predicament {
   outline: none !important;
