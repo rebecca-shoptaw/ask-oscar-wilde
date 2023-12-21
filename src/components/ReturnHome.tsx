@@ -1,8 +1,8 @@
-import React from "react";
+import { PORTFOLIO_LINK } from "../data/Links";
 
 const ReturnHome = () => {
   return (
-    <a href="https://rebeccashoptaw.dev/">
+    <a href={PORTFOLIO_LINK}>
       <i className="bi bi-x back-btn" />
     </a>
   );

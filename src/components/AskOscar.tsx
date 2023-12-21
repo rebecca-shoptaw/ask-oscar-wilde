@@ -2,6 +2,7 @@ import { useNewQuote } from "../hooks/useNewQuote";
 import { useInput } from "../hooks/useInput";
 import Input from "./Input";
 import Quote from "./Quote";
+import { PORTFOLIO_LINK } from "../data/Links";
 
 const AskOscar = () => {
   const inputInfo = useInput();
@@ -19,7 +20,7 @@ const AskOscar = () => {
       </main>
       <footer className="credits">
         Site design & coding by
-        <a rel="author" href="https://rebeccashoptaw.dev/" target="_blank">
+        <a rel="author" href={PORTFOLIO_LINK} target="_blank">
           Rebecca Shoptaw
         </a>
       </footer>
