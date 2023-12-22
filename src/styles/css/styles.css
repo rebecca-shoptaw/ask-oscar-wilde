@@ -32,6 +32,7 @@ html main {
   text-align: left;
   align-items: left;
   justify-content: left;
+  transition: width 0.5s, height 0.5s;
   background-color: #1c252d;
   min-width: 179px;
   width: 80%;
@@ -43,13 +44,13 @@ html main {
   font-size: 20px;
   margin-bottom: -3px;
 }
-.tile #predicament, .tile #quote {
+.tile #predicament, .tile #quote-text {
   border-radius: 5px;
   background-color: #ddd;
   color: black;
 }
-.tile #quote {
-  display: block;
+.tile #quote-text {
+  padding: 1rem;
   margin-bottom: 0.25rem;
   margin-top: 0;
 }
@@ -80,27 +81,21 @@ html main {
   outline: none !important;
   box-shadow: 1px 2px #ddd;
   border-radius: 5px;
+  transition: background-color 0.5s;
   color: #ddd;
   padding: 5px 10px;
 }
 #buttons .button:hover, #buttons .button:active {
   background-color: #13191f !important;
 }
-#buttons .button:active {
-  box-shadow: none !important;
-  transform: translateX(1px) translateY(2px);
-}
-#buttons .button:focus {
-  box-shadow: 1px 2px #ddd;
-}
 
 .back-btn {
+  transition: opacity 0.5s;
   position: fixed;
   top: 0px;
   right: 10px;
   font-size: 30px;
   color: #fff !important;
-  transition: opacity 0.2s;
 }
 
 .back-btn:hover {
@@ -115,6 +110,7 @@ html main {
   align-items: right;
   justify-content: right;
   margin: 3rem;
+  transition: width 0.5s, height 0.5s;
   color: #ddd;
   font-size: 14px;
   line-height: 1.2;

@@ -1,6 +1,7 @@
 .credits {
   @include flexColumn($gap: 0px, $text: right, $align: right, $justify: right);
   @include bigMargin;
+  @include animateWidthHeight;
   color: $off-white;
   font-size: 14px;
   line-height: 1.2;

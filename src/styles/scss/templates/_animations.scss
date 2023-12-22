@@ -1,0 +1,13 @@
+$anim-time: 0.5s;
+
+@mixin animateBack {
+  transition: background-color $anim-time;
+}
+
+@mixin animateOpacity {
+  transition: opacity $anim-time;
+}
+
+@mixin animateWidthHeight {
+  transition: width $anim-time, height $anim-time;
+}

@@ -2,6 +2,7 @@
   @include roundBorder;
   @include offWhiteBorder(0.5px);
   @include flexColumn($gap: 15px, $text: left, $align: left, $justify: left);
+  @include animateWidthHeight;
   background-color: $blue-back;
   min-width: 179px;
   width: 80%;
@@ -20,9 +21,9 @@
     color: black;
   }
 
-  #quote {
+  #quote-text {
     @extend %text-box;
-    display: block;
+    padding: 1rem;
     margin-bottom: 0.25rem;
     margin-top: 0;
   }
