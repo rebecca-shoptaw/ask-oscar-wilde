@@ -12,13 +12,7 @@ The idea behind Ask Oscar Wilde was twofold: first, to bring back some of the fu
 
 ## Built With
 
-- [![React][React-icon]][React-url]
-- [![Vite][Vite-icon]][Vite-url]
-- [![Typescript][TS-icon]][TS-url]
-- [![HTML][HTML-icon]][HTML-url]
-- [![CSS][CSS-icon]][CSS-url]
-- [![SASS][SASS-icon]][SASS-url]
-- [![Bootstrap][Bootstrap-icon]][Bootstrap-url]
+[![React][React-icon]][React-url] [![Vite][Vite-icon]][Vite-url] [![Typescript][TS-icon]][TS-url] [![HTML][HTML-icon]][HTML-url] [![CSS][CSS-icon]][CSS-url] [![SASS][SASS-icon]][SASS-url] [![GSAP][GSAP-icon]][GSAP-url]
 
 ## UI Walkthrough
 
@@ -87,5 +81,5 @@ Rebecca Shoptaw -
 [CSS-url]: https://www.w3schools.com/css/
 [SASS-icon]: https://img.shields.io/badge/-Sass-20232A?style=for-the-badge&logo=sass&logoColor=CC6699
 [SASS-url]: https://sass-lang.com/
-[Bootstrap-icon]: https://img.shields.io/badge/-Bootstrap-20232A?style=for-the-badge&logo=bootstrap&logoColor=7952B3
-[Bootstrap-url]: https://getbootstrap.com/
+[GSAP-icon]: https://img.shields.io/badge/-GSAP-20232A?style=for-the-badge&logo=greensock&logoColor=88CE02
+[GSAP-url]: https://sass-lang.com/
