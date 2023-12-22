@@ -1,22 +1,24 @@
-type inputProps = {
-  inputInfo: inputInfoProps;
-  handleInput: () => void;
-  handleReset: Function;
-};
-
-type inputInfoProps = {
+type InputInfoProps = {
   input: string;
   inputRef: React.RefObject<HTMLTextAreaElement>;
   clearInput: () => void;
   handleInputUpdate: (text: string) => void;
 };
 
-type controlsProps = {
+export type InputProps = {
+  inputInfo: InputInfoProps;
+  handleInput: () => void;
+  handleReset: Function;
+};
+
+
+export type ControlsProps = {
   handleInput: () => void;
   handleReset: Function;
   clearInput: Function;
 };
 
-type quoteProps = {
+export type QuoteProps = {
   quote: string;
 };
+

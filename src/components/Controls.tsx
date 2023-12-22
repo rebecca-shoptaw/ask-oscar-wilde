@@ -1,4 +1,6 @@
-const Controls = (props: controlsProps) => {
+import { ControlsProps } from "../types/types";
+
+const Controls = (props: ControlsProps) => {
   const { handleInput, handleReset, clearInput } = props;
 
   const handleNewPredicament = () => {

@@ -1,6 +1,7 @@
 import Controls from "./Controls";
+import { InputProps } from "../types/types";
 
-const Input = (props: inputProps) => {
+const Input = (props: InputProps) => {
   const { inputInfo, handleInput, handleReset } = props;
   const { input, inputRef, clearInput, handleInputUpdate } = inputInfo;
 
