@@ -19,19 +19,20 @@
     @include roundBorder;
     background-color: $off-white;
     color: black;
-    padding: 11px;
   }
 
   #quote-text {
     @extend %text-box;
     margin-bottom: 0.25rem;
     margin-top: 0;
+    padding: 20px;
   }
 
   #predicament {
     @extend %text-box;
     @include noOutline;
     margin-bottom: 1rem;
+    padding: 11px;
   }
 
   #author {

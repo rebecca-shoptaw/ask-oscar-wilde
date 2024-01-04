@@ -11,3 +11,8 @@ $anim-time: 0.5s;
 @mixin animateWidthHeight {
   transition: width $anim-time, height $anim-time;
 }
+
+@mixin animate-any ($prop) {
+  transition-property: $prop;
+  transition-duration: $anim-time;
+}

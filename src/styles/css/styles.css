@@ -48,15 +48,16 @@ html main {
   border-radius: 5px;
   background-color: #ddd;
   color: black;
-  padding: 11px;
 }
 .tile #quote-text {
   margin-bottom: 0.25rem;
   margin-top: 0;
+  padding: 20px;
 }
 .tile #predicament {
   outline: none !important;
   margin-bottom: 1rem;
+  padding: 11px;
 }
 .tile #author {
   color: #ddd;
@@ -114,6 +115,8 @@ html main {
   padding-right: 10%;
 }
 .credits a {
+  transition-property: "color, text-decoration-color";
+  transition-duration: 0.5s;
   color: #ddd;
   text-decoration: underline 1px transparent;
 }

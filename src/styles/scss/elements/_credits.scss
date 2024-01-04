@@ -9,6 +9,7 @@
   padding-right: 10%;
 
   a {
+    @include animate-any("color, text-decoration-color");
     color: $off-white;
     text-decoration: underline 1px transparent;
 
