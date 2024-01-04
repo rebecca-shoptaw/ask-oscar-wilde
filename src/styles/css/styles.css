@@ -48,18 +48,14 @@ html main {
   border-radius: 5px;
   background-color: #ddd;
   color: black;
+  padding: 11px;
 }
 .tile #quote-text {
-  padding: 1rem;
   margin-bottom: 0.25rem;
   margin-top: 0;
 }
-.tile #quote-text {
-  padding: 20px;
-}
 .tile #predicament {
   outline: none !important;
-  padding: 11px;
   margin-bottom: 1rem;
 }
 .tile #author {
